@@ -1,0 +1,268 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect -8 48 160 64)
+	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
+	(text "CARRY_IN" (rect 5 0 71 14)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -64 112 144 128)
+	(text "INPUT" (rect 165 0 206 11)(font "Arial" (font_size 6)))
+	(text "INPUTA[15..0]" (rect 5 0 113 14)(font "Arial" ))
+	(pt 208 8)
+	(drawing
+		(line (pt 124 12)(pt 149 12))
+		(line (pt 124 4)(pt 149 4))
+		(line (pt 153 8)(pt 208 8))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 149 4)(pt 153 8))
+		(line (pt 149 12)(pt 153 8))
+	)
+	(text "VCC" (rect 168 7 192 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -64 160 144 176)
+	(text "INPUT" (rect 165 0 206 11)(font "Arial" (font_size 6)))
+	(text "INPUTB[15..0]" (rect 5 0 113 14)(font "Intel Clear" ))
+	(pt 208 8)
+	(drawing
+		(line (pt 124 12)(pt 149 12))
+		(line (pt 124 4)(pt 149 4))
+		(line (pt 153 8)(pt 208 8))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 149 4)(pt 153 8))
+		(line (pt 149 12)(pt 153 8))
+	)
+	(text "VCC" (rect 168 7 192 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 728 128 931 144)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "RESULT[15..0]" (rect 90 0 197 14)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 736 264 912 280)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "CARRY" (rect 90 0 131 14)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 272 72 552 168)
+	(text "blocksumador8" (rect 5 0 127 16)(font "Arial" (font_size 8)))
+	(text "inst1" (rect 8 78 49 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CARRY_IN" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "CARRY_IN" (rect 21 27 96 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "INPUTA[0..7]" (rect 0 0 113 16)(font "Arial" (font_size 8)))
+		(text "INPUTA[0..7]" (rect 21 43 134 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "INPUTB[0..7]" (rect 0 0 113 16)(font "Arial" (font_size 8)))
+		(text "INPUTB[0..7]" (rect 21 59 134 75)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 280 32)
+		(output)
+		(text "RESULT[0..7]" (rect 0 0 113 16)(font "Arial" (font_size 8)))
+		(text "RESULT[0..7]" (rect 146 27 259 43)(font "Arial" (font_size 8)))
+		(line (pt 280 32)(pt 264 32)(line_width 3))
+	)
+	(port
+		(pt 280 48)
+		(output)
+		(text "CARRY" (rect 0 0 47 16)(font "Arial" (font_size 8)))
+		(text "CARRY" (rect 212 43 259 59)(font "Arial" (font_size 8)))
+		(line (pt 280 48)(pt 264 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 264 80))
+	)
+)
+(symbol
+	(rect 272 200 552 296)
+	(text "blocksumador8" (rect 5 0 127 16)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 78 49 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CARRY_IN" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "CARRY_IN" (rect 21 27 96 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "INPUTA[0..7]" (rect 0 0 113 16)(font "Arial" (font_size 8)))
+		(text "INPUTA[0..7]" (rect 21 43 134 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "INPUTB[0..7]" (rect 0 0 113 16)(font "Arial" (font_size 8)))
+		(text "INPUTB[0..7]" (rect 21 59 134 75)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 280 32)
+		(output)
+		(text "RESULT[0..7]" (rect 0 0 113 16)(font "Arial" (font_size 8)))
+		(text "RESULT[0..7]" (rect 146 27 259 43)(font "Arial" (font_size 8)))
+		(line (pt 280 32)(pt 264 32)(line_width 3))
+	)
+	(port
+		(pt 280 48)
+		(output)
+		(text "CARRY" (rect 0 0 47 16)(font "Arial" (font_size 8)))
+		(text "CARRY" (rect 212 43 259 59)(font "Arial" (font_size 8)))
+		(line (pt 280 48)(pt 264 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 264 80))
+	)
+)
+(connector
+	(pt 256 184)
+	(pt 256 232)
+)
+(connector
+	(pt 256 232)
+	(pt 272 232)
+)
+(connector
+	(pt 272 104)
+	(pt 240 104)
+)
+(connector
+	(pt 240 104)
+	(pt 240 56)
+)
+(connector
+	(pt 160 56)
+	(pt 240 56)
+)
+(connector
+	(text "INPUTA[8..15]" (rect 201 232 308 246)(font "Intel Clear" ))
+	(pt 272 248)
+	(pt 184 248)
+	(bus)
+)
+(connector
+	(text "INPUTB[0..7]" (rect 205 120 304 134)(font "Intel Clear" ))
+	(pt 272 136)
+	(pt 176 136)
+	(bus)
+)
+(connector
+	(text "INPUTB[8..15]" (rect 205 248 312 262)(font "Intel Clear" ))
+	(pt 272 264)
+	(pt 184 264)
+	(bus)
+)
+(connector
+	(text "RESULT[0..7]" (rect 636 88 735 102)(font "Intel Clear" ))
+	(pt 552 104)
+	(pt 704 104)
+	(bus)
+)
+(connector
+	(pt 560 120)
+	(pt 560 184)
+)
+(connector
+	(pt 256 184)
+	(pt 560 184)
+)
+(connector
+	(pt 552 120)
+	(pt 560 120)
+)
+(connector
+	(pt 552 248)
+	(pt 576 248)
+)
+(connector
+	(text "RESULT[8..15]" (rect 571 216 678 230)(font "Intel Clear" ))
+	(pt 552 232)
+	(pt 648 232)
+	(bus)
+)
+(connector
+	(pt 576 248)
+	(pt 576 272)
+)
+(connector
+	(pt 576 272)
+	(pt 736 272)
+)
+(connector
+	(text "INPUTA[0..7]" (rect 190 104 289 118)(font "Intel Clear" ))
+	(pt 272 120)
+	(pt 176 120)
+	(bus)
+)

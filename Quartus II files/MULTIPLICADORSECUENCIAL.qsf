@@ -1,0 +1,113 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 17:04:16  May 28, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		MULTIPLICADORSECUENCIAL_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE auto
+set_global_assignment -name TOP_LEVEL_ENTITY MULTIPLICADORSECUENCIAL
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:04:16  MAY 28, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.1.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR /home/glpuga/Dropbox/PROYECTOSFINALES/TF05MULTIPLICADORSECUENCIAL/TF05MULTIPLICADORSECUENCIAL/simulation/qsim/ -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name BDF_FILE Latch.bdf
+set_global_assignment -name BDF_FILE K1.bdf
+set_global_assignment -name BDF_FILE ContadorciclosModificado.bdf
+set_global_assignment -name BDF_FILE K0.bdf
+set_global_assignment -name BDF_FILE Block4.bdf
+set_global_assignment -name BDF_FILE Block1.bdf
+set_global_assignment -name BDF_FILE blocksumador8.bdf
+set_global_assignment -name BDF_FILE Blocksumador32.bdf
+set_global_assignment -name BDF_FILE Blocksumador16.bdf
+set_global_assignment -name BDF_FILE 32bits.bdf
+set_global_assignment -name BDF_FILE CNT31.bdf
+set_global_assignment -name BDF_FILE SHIFTBOX.bdf
+set_global_assignment -name BDF_FILE SUMADOR32.bdf
+set_global_assignment -name BDF_FILE REGISTRO32.bdf
+set_global_assignment -name BDF_FILE SETZERO.bdf
+set_global_assignment -name BDF_FILE MULTIPLICADORSECUENCIAL.bdf
+set_global_assignment -name BDF_FILE REGISTRODESP32.bdf
+set_global_assignment -name BDF_FILE REGISTRODESP32SINCARGA.bdf
+set_global_assignment -name BDF_FILE SM.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTMULTIPLICADORSECUENCIAL.vwf
+set_global_assignment -name BDF_FILE copia4bits.bdf
+set_global_assignment -name BDF_FILE copia16bits.bdf
+set_global_assignment -name BDF_FILE Block2.bdf
+set_global_assignment -name BDF_FILE Block3.bdf
+set_global_assignment -name BDF_FILE TEST.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTREGISTRO32.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTSHIFTBOX.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTREGDESP32.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTREGDESP32SINCARGA.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTBLOCKSUMADOR8.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTBLOCKSUMADOR16.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTBLOCKSUMADOR32.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTSUMADOR32.vwf
+set_global_assignment -name BDF_FILE Contadorciclos.bdf
+set_global_assignment -name BDF_FILE ContadorCiclos4.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTCONTADORCICLOS4.vwf
+set_global_assignment -name BDF_FILE ContadorCiclos7.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTCNT31.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTCONTADORCICLOS7.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTCONTADORCICLOSMODIFICADO.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTCONTADORCICLOS.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTCONTADORCICLOSV2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTSM.vwf
+set_global_assignment -name BDF_FILE sm2.bdf
+set_global_assignment -name BDF_FILE victor.bdf
+set_global_assignment -name BDF_FILE latc.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTSM2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTMULTIPLICADOR.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TEST.vwf
+set_global_assignment -name BDF_FILE TEST2.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TEST2.vwf
+set_global_assignment -name BDF_FILE TEST3.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TEST3.vwf
+set_global_assignment -name BDF_FILE TEST4.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TEST4.vwf
+set_global_assignment -name BDF_FILE TEST5.bdf
+set_global_assignment -name BDF_FILE sm3.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTSM3.vwf
+set_global_assignment -name BDF_FILE TEST6.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TEST6.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

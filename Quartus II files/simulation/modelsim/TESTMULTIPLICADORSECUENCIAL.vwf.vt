@@ -1,0 +1,658 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "06/27/2019 16:16:31"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          MULTIPLICADORSECUENCIAL
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module MULTIPLICADORSECUENCIAL_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg CLK;
+reg nRST;
+reg [31:0] OPERANDO1;
+reg [31:0] OPERANDO2;
+reg START;
+// wires                                               
+wire READY;
+wire [63:0] RESULTADO;
+wire S0;
+wire S1;
+
+// assign statements (if any)                          
+MULTIPLICADORSECUENCIAL i1 (
+// port map - connection between master ports and signals/registers   
+	.CLK(CLK),
+	.nRST(nRST),
+	.OPERANDO1(OPERANDO1),
+	.OPERANDO2(OPERANDO2),
+	.READY(READY),
+	.RESULTADO(RESULTADO),
+	.S0(S0),
+	.S1(S1),
+	.START(START)
+);
+initial 
+begin 
+#1000000 $stop;
+end 
+
+// nRST
+initial
+begin
+	nRST = 1'b1;
+	nRST = #10000 1'b0;
+	nRST = #10000 1'b1;
+end 
+
+// CLK
+always
+begin
+	CLK = 1'b0;
+	CLK = #1250 1'b1;
+	#1250;
+end 
+
+// START
+initial
+begin
+	START = 1'b0;
+	START = #30000 1'b1;
+	START = #10000 1'b0;
+	START = #140000 1'b1;
+	START = #10000 1'b0;
+	START = #140000 1'b1;
+	START = #10000 1'b0;
+	START = #120000 1'b1;
+	START = #10000 1'b0;
+	START = #130000 1'b1;
+	START = #10000 1'b0;
+	START = #110000 1'b1;
+	START = #10000 1'b0;
+end 
+// OPERANDO1[ 31 ]
+initial
+begin
+	OPERANDO1[31] = 1'bX;
+	OPERANDO1[31] = #30000 1'b0;
+	OPERANDO1[31] = #150000 1'b1;
+	OPERANDO1[31] = #150000 1'b0;
+	OPERANDO1[31] = #390000 1'b1;
+end 
+// OPERANDO1[ 30 ]
+initial
+begin
+	OPERANDO1[30] = 1'bX;
+	OPERANDO1[30] = #30000 1'b0;
+	OPERANDO1[30] = #150000 1'b1;
+	OPERANDO1[30] = #150000 1'b0;
+	OPERANDO1[30] = #390000 1'b1;
+end 
+// OPERANDO1[ 29 ]
+initial
+begin
+	OPERANDO1[29] = 1'bX;
+	OPERANDO1[29] = #30000 1'b0;
+	OPERANDO1[29] = #150000 1'b1;
+	OPERANDO1[29] = #150000 1'b0;
+	OPERANDO1[29] = #390000 1'b1;
+end 
+// OPERANDO1[ 28 ]
+initial
+begin
+	OPERANDO1[28] = 1'bX;
+	OPERANDO1[28] = #30000 1'b0;
+	OPERANDO1[28] = #150000 1'b1;
+	OPERANDO1[28] = #150000 1'b0;
+	OPERANDO1[28] = #390000 1'b1;
+end 
+// OPERANDO1[ 27 ]
+initial
+begin
+	OPERANDO1[27] = 1'bX;
+	OPERANDO1[27] = #30000 1'b0;
+	OPERANDO1[27] = #150000 1'b1;
+	OPERANDO1[27] = #150000 1'b0;
+	OPERANDO1[27] = #390000 1'b1;
+end 
+// OPERANDO1[ 26 ]
+initial
+begin
+	OPERANDO1[26] = 1'bX;
+	OPERANDO1[26] = #30000 1'b0;
+	OPERANDO1[26] = #150000 1'b1;
+	OPERANDO1[26] = #150000 1'b0;
+	OPERANDO1[26] = #390000 1'b1;
+end 
+// OPERANDO1[ 25 ]
+initial
+begin
+	OPERANDO1[25] = 1'bX;
+	OPERANDO1[25] = #30000 1'b0;
+	OPERANDO1[25] = #150000 1'b1;
+	OPERANDO1[25] = #150000 1'b0;
+	OPERANDO1[25] = #390000 1'b1;
+end 
+// OPERANDO1[ 24 ]
+initial
+begin
+	OPERANDO1[24] = 1'bX;
+	OPERANDO1[24] = #30000 1'b0;
+	OPERANDO1[24] = #150000 1'b1;
+	OPERANDO1[24] = #150000 1'b0;
+	OPERANDO1[24] = #390000 1'b1;
+end 
+// OPERANDO1[ 23 ]
+initial
+begin
+	OPERANDO1[23] = 1'bX;
+	OPERANDO1[23] = #30000 1'b0;
+	OPERANDO1[23] = #150000 1'b1;
+	OPERANDO1[23] = #150000 1'b0;
+	OPERANDO1[23] = #390000 1'b1;
+end 
+// OPERANDO1[ 22 ]
+initial
+begin
+	OPERANDO1[22] = 1'bX;
+	OPERANDO1[22] = #30000 1'b0;
+	OPERANDO1[22] = #150000 1'b1;
+	OPERANDO1[22] = #150000 1'b0;
+	OPERANDO1[22] = #390000 1'b1;
+end 
+// OPERANDO1[ 21 ]
+initial
+begin
+	OPERANDO1[21] = 1'bX;
+	OPERANDO1[21] = #30000 1'b0;
+	OPERANDO1[21] = #150000 1'b1;
+	OPERANDO1[21] = #150000 1'b0;
+	OPERANDO1[21] = #390000 1'b1;
+end 
+// OPERANDO1[ 20 ]
+initial
+begin
+	OPERANDO1[20] = 1'bX;
+	OPERANDO1[20] = #30000 1'b0;
+	OPERANDO1[20] = #150000 1'b1;
+	OPERANDO1[20] = #150000 1'b0;
+	OPERANDO1[20] = #390000 1'b1;
+end 
+// OPERANDO1[ 19 ]
+initial
+begin
+	OPERANDO1[19] = 1'bX;
+	OPERANDO1[19] = #30000 1'b0;
+	OPERANDO1[19] = #150000 1'b1;
+	OPERANDO1[19] = #150000 1'b0;
+	OPERANDO1[19] = #390000 1'b1;
+end 
+// OPERANDO1[ 18 ]
+initial
+begin
+	OPERANDO1[18] = 1'bX;
+	OPERANDO1[18] = #30000 1'b0;
+	OPERANDO1[18] = #150000 1'b1;
+	OPERANDO1[18] = #150000 1'b0;
+	OPERANDO1[18] = #390000 1'b1;
+end 
+// OPERANDO1[ 17 ]
+initial
+begin
+	OPERANDO1[17] = 1'bX;
+	OPERANDO1[17] = #30000 1'b0;
+	OPERANDO1[17] = #150000 1'b1;
+	OPERANDO1[17] = #150000 1'b0;
+	OPERANDO1[17] = #390000 1'b1;
+end 
+// OPERANDO1[ 16 ]
+initial
+begin
+	OPERANDO1[16] = 1'bX;
+	OPERANDO1[16] = #30000 1'b0;
+	OPERANDO1[16] = #150000 1'b1;
+	OPERANDO1[16] = #150000 1'b0;
+	OPERANDO1[16] = #390000 1'b1;
+end 
+// OPERANDO1[ 15 ]
+initial
+begin
+	OPERANDO1[15] = 1'bX;
+	OPERANDO1[15] = #30000 1'b0;
+	OPERANDO1[15] = #150000 1'b1;
+	OPERANDO1[15] = #150000 1'b0;
+	OPERANDO1[15] = #390000 1'b1;
+end 
+// OPERANDO1[ 14 ]
+initial
+begin
+	OPERANDO1[14] = 1'bX;
+	OPERANDO1[14] = #30000 1'b0;
+	OPERANDO1[14] = #150000 1'b1;
+	OPERANDO1[14] = #150000 1'b0;
+	OPERANDO1[14] = #390000 1'b1;
+end 
+// OPERANDO1[ 13 ]
+initial
+begin
+	OPERANDO1[13] = 1'bX;
+	OPERANDO1[13] = #30000 1'b0;
+	OPERANDO1[13] = #150000 1'b1;
+	OPERANDO1[13] = #150000 1'b0;
+	OPERANDO1[13] = #390000 1'b1;
+end 
+// OPERANDO1[ 12 ]
+initial
+begin
+	OPERANDO1[12] = 1'bX;
+	OPERANDO1[12] = #30000 1'b0;
+	OPERANDO1[12] = #150000 1'b1;
+	OPERANDO1[12] = #150000 1'b0;
+	OPERANDO1[12] = #390000 1'b1;
+end 
+// OPERANDO1[ 11 ]
+initial
+begin
+	OPERANDO1[11] = 1'bX;
+	OPERANDO1[11] = #30000 1'b0;
+	OPERANDO1[11] = #150000 1'b1;
+	OPERANDO1[11] = #150000 1'b0;
+	OPERANDO1[11] = #390000 1'b1;
+end 
+// OPERANDO1[ 10 ]
+initial
+begin
+	OPERANDO1[10] = 1'bX;
+	OPERANDO1[10] = #30000 1'b0;
+	OPERANDO1[10] = #150000 1'b1;
+	OPERANDO1[10] = #150000 1'b0;
+	OPERANDO1[10] = #270000 1'b1;
+end 
+// OPERANDO1[ 9 ]
+initial
+begin
+	OPERANDO1[9] = 1'bX;
+	OPERANDO1[9] = #30000 1'b0;
+	OPERANDO1[9] = #150000 1'b1;
+	OPERANDO1[9] = #150000 1'b0;
+	OPERANDO1[9] = #390000 1'b1;
+end 
+// OPERANDO1[ 8 ]
+initial
+begin
+	OPERANDO1[8] = 1'bX;
+	OPERANDO1[8] = #30000 1'b0;
+	OPERANDO1[8] = #150000 1'b1;
+	OPERANDO1[8] = #150000 1'b0;
+	OPERANDO1[8] = #390000 1'b1;
+end 
+// OPERANDO1[ 7 ]
+initial
+begin
+	OPERANDO1[7] = 1'bX;
+	OPERANDO1[7] = #30000 1'b0;
+	OPERANDO1[7] = #150000 1'b1;
+	OPERANDO1[7] = #150000 1'b0;
+	OPERANDO1[7] = #390000 1'b1;
+end 
+// OPERANDO1[ 6 ]
+initial
+begin
+	OPERANDO1[6] = 1'bX;
+	OPERANDO1[6] = #30000 1'b0;
+	OPERANDO1[6] = #150000 1'b1;
+	OPERANDO1[6] = #280000 1'b0;
+	OPERANDO1[6] = #140000 1'b1;
+end 
+// OPERANDO1[ 5 ]
+initial
+begin
+	OPERANDO1[5] = 1'bX;
+	OPERANDO1[5] = #30000 1'b0;
+	OPERANDO1[5] = #150000 1'b1;
+	OPERANDO1[5] = #280000 1'b0;
+	OPERANDO1[5] = #260000 1'b1;
+end 
+// OPERANDO1[ 4 ]
+initial
+begin
+	OPERANDO1[4] = 1'bX;
+	OPERANDO1[4] = #30000 1'b0;
+	OPERANDO1[4] = #150000 1'b1;
+	OPERANDO1[4] = #150000 1'b0;
+	OPERANDO1[4] = #270000 1'b1;
+end 
+// OPERANDO1[ 3 ]
+initial
+begin
+	OPERANDO1[3] = 1'bX;
+	OPERANDO1[3] = #30000 1'b0;
+	OPERANDO1[3] = #150000 1'b1;
+	OPERANDO1[3] = #150000 1'b0;
+	OPERANDO1[3] = #390000 1'b1;
+end 
+// OPERANDO1[ 2 ]
+initial
+begin
+	OPERANDO1[2] = 1'bX;
+	OPERANDO1[2] = #30000 1'b0;
+	OPERANDO1[2] = #150000 1'b1;
+	OPERANDO1[2] = #280000 1'b0;
+	OPERANDO1[2] = #140000 1'b1;
+end 
+// OPERANDO1[ 1 ]
+initial
+begin
+	OPERANDO1[1] = 1'bX;
+	OPERANDO1[1] = #30000 1'b0;
+	OPERANDO1[1] = #150000 1'b1;
+	OPERANDO1[1] = #150000 1'b0;
+	OPERANDO1[1] = #270000 1'b1;
+end 
+// OPERANDO1[ 0 ]
+initial
+begin
+	OPERANDO1[0] = 1'bX;
+	OPERANDO1[0] = #30000 1'b0;
+	OPERANDO1[0] = #150000 1'b1;
+	OPERANDO1[0] = #150000 1'b0;
+	OPERANDO1[0] = #130000 1'b1;
+end 
+// OPERANDO2[ 31 ]
+initial
+begin
+	OPERANDO2[31] = 1'bX;
+	OPERANDO2[31] = #30000 1'b1;
+	OPERANDO2[31] = #150000 1'b0;
+	OPERANDO2[31] = #540000 1'b1;
+end 
+// OPERANDO2[ 30 ]
+initial
+begin
+	OPERANDO2[30] = 1'bX;
+	OPERANDO2[30] = #30000 1'b1;
+	OPERANDO2[30] = #150000 1'b0;
+	OPERANDO2[30] = #540000 1'b1;
+end 
+// OPERANDO2[ 29 ]
+initial
+begin
+	OPERANDO2[29] = 1'bX;
+	OPERANDO2[29] = #30000 1'b1;
+	OPERANDO2[29] = #150000 1'b0;
+	OPERANDO2[29] = #540000 1'b1;
+end 
+// OPERANDO2[ 28 ]
+initial
+begin
+	OPERANDO2[28] = 1'bX;
+	OPERANDO2[28] = #30000 1'b1;
+	OPERANDO2[28] = #150000 1'b0;
+	OPERANDO2[28] = #540000 1'b1;
+end 
+// OPERANDO2[ 27 ]
+initial
+begin
+	OPERANDO2[27] = 1'bX;
+	OPERANDO2[27] = #30000 1'b1;
+	OPERANDO2[27] = #150000 1'b0;
+	OPERANDO2[27] = #540000 1'b1;
+end 
+// OPERANDO2[ 26 ]
+initial
+begin
+	OPERANDO2[26] = 1'bX;
+	OPERANDO2[26] = #30000 1'b1;
+	OPERANDO2[26] = #150000 1'b0;
+	OPERANDO2[26] = #540000 1'b1;
+end 
+// OPERANDO2[ 25 ]
+initial
+begin
+	OPERANDO2[25] = 1'bX;
+	OPERANDO2[25] = #30000 1'b1;
+	OPERANDO2[25] = #150000 1'b0;
+	OPERANDO2[25] = #540000 1'b1;
+end 
+// OPERANDO2[ 24 ]
+initial
+begin
+	OPERANDO2[24] = 1'bX;
+	OPERANDO2[24] = #30000 1'b1;
+	OPERANDO2[24] = #150000 1'b0;
+	OPERANDO2[24] = #540000 1'b1;
+end 
+// OPERANDO2[ 23 ]
+initial
+begin
+	OPERANDO2[23] = 1'bX;
+	OPERANDO2[23] = #30000 1'b1;
+	OPERANDO2[23] = #150000 1'b0;
+	OPERANDO2[23] = #540000 1'b1;
+end 
+// OPERANDO2[ 22 ]
+initial
+begin
+	OPERANDO2[22] = 1'bX;
+	OPERANDO2[22] = #30000 1'b1;
+	OPERANDO2[22] = #150000 1'b0;
+	OPERANDO2[22] = #540000 1'b1;
+end 
+// OPERANDO2[ 21 ]
+initial
+begin
+	OPERANDO2[21] = 1'bX;
+	OPERANDO2[21] = #30000 1'b1;
+	OPERANDO2[21] = #150000 1'b0;
+	OPERANDO2[21] = #540000 1'b1;
+end 
+// OPERANDO2[ 20 ]
+initial
+begin
+	OPERANDO2[20] = 1'bX;
+	OPERANDO2[20] = #30000 1'b1;
+	OPERANDO2[20] = #150000 1'b0;
+	OPERANDO2[20] = #540000 1'b1;
+end 
+// OPERANDO2[ 19 ]
+initial
+begin
+	OPERANDO2[19] = 1'bX;
+	OPERANDO2[19] = #30000 1'b1;
+	OPERANDO2[19] = #150000 1'b0;
+	OPERANDO2[19] = #540000 1'b1;
+end 
+// OPERANDO2[ 18 ]
+initial
+begin
+	OPERANDO2[18] = 1'bX;
+	OPERANDO2[18] = #30000 1'b1;
+	OPERANDO2[18] = #150000 1'b0;
+	OPERANDO2[18] = #540000 1'b1;
+end 
+// OPERANDO2[ 17 ]
+initial
+begin
+	OPERANDO2[17] = 1'bX;
+	OPERANDO2[17] = #30000 1'b1;
+	OPERANDO2[17] = #150000 1'b0;
+	OPERANDO2[17] = #540000 1'b1;
+end 
+// OPERANDO2[ 16 ]
+initial
+begin
+	OPERANDO2[16] = 1'bX;
+	OPERANDO2[16] = #30000 1'b1;
+	OPERANDO2[16] = #150000 1'b0;
+	OPERANDO2[16] = #540000 1'b1;
+end 
+// OPERANDO2[ 15 ]
+initial
+begin
+	OPERANDO2[15] = 1'bX;
+	OPERANDO2[15] = #30000 1'b1;
+	OPERANDO2[15] = #150000 1'b0;
+	OPERANDO2[15] = #540000 1'b1;
+end 
+// OPERANDO2[ 14 ]
+initial
+begin
+	OPERANDO2[14] = 1'bX;
+	OPERANDO2[14] = #30000 1'b1;
+	OPERANDO2[14] = #150000 1'b0;
+	OPERANDO2[14] = #540000 1'b1;
+end 
+// OPERANDO2[ 13 ]
+initial
+begin
+	OPERANDO2[13] = 1'bX;
+	OPERANDO2[13] = #30000 1'b1;
+	OPERANDO2[13] = #150000 1'b0;
+	OPERANDO2[13] = #150000 1'b1;
+	OPERANDO2[13] = #130000 1'b0;
+	OPERANDO2[13] = #260000 1'b1;
+end 
+// OPERANDO2[ 12 ]
+initial
+begin
+	OPERANDO2[12] = 1'bX;
+	OPERANDO2[12] = #30000 1'b1;
+	OPERANDO2[12] = #150000 1'b0;
+	OPERANDO2[12] = #540000 1'b1;
+end 
+// OPERANDO2[ 11 ]
+initial
+begin
+	OPERANDO2[11] = 1'bX;
+	OPERANDO2[11] = #30000 1'b1;
+	OPERANDO2[11] = #150000 1'b0;
+	OPERANDO2[11] = #540000 1'b1;
+end 
+// OPERANDO2[ 10 ]
+initial
+begin
+	OPERANDO2[10] = 1'bX;
+	OPERANDO2[10] = #30000 1'b1;
+	OPERANDO2[10] = #150000 1'b0;
+	OPERANDO2[10] = #150000 1'b1;
+	OPERANDO2[10] = #270000 1'b0;
+	OPERANDO2[10] = #120000 1'b1;
+end 
+// OPERANDO2[ 9 ]
+initial
+begin
+	OPERANDO2[9] = 1'bX;
+	OPERANDO2[9] = #30000 1'b1;
+	OPERANDO2[9] = #150000 1'b0;
+	OPERANDO2[9] = #150000 1'b1;
+	OPERANDO2[9] = #130000 1'b0;
+	OPERANDO2[9] = #260000 1'b1;
+end 
+// OPERANDO2[ 8 ]
+initial
+begin
+	OPERANDO2[8] = 1'bX;
+	OPERANDO2[8] = #30000 1'b1;
+	OPERANDO2[8] = #150000 1'b0;
+	OPERANDO2[8] = #150000 1'b1;
+	OPERANDO2[8] = #130000 1'b0;
+	OPERANDO2[8] = #260000 1'b1;
+end 
+// OPERANDO2[ 7 ]
+initial
+begin
+	OPERANDO2[7] = 1'bX;
+	OPERANDO2[7] = #30000 1'b1;
+	OPERANDO2[7] = #150000 1'b0;
+	OPERANDO2[7] = #540000 1'b1;
+end 
+// OPERANDO2[ 6 ]
+initial
+begin
+	OPERANDO2[6] = 1'bX;
+	OPERANDO2[6] = #30000 1'b1;
+	OPERANDO2[6] = #150000 1'b0;
+	OPERANDO2[6] = #280000 1'b1;
+	OPERANDO2[6] = #140000 1'b0;
+	OPERANDO2[6] = #120000 1'b1;
+end 
+// OPERANDO2[ 5 ]
+initial
+begin
+	OPERANDO2[5] = 1'bX;
+	OPERANDO2[5] = #30000 1'b1;
+	OPERANDO2[5] = #150000 1'b0;
+	OPERANDO2[5] = #540000 1'b1;
+end 
+// OPERANDO2[ 4 ]
+initial
+begin
+	OPERANDO2[4] = 1'bX;
+	OPERANDO2[4] = #30000 1'b1;
+	OPERANDO2[4] = #150000 1'b0;
+	OPERANDO2[4] = #280000 1'b1;
+	OPERANDO2[4] = #140000 1'b0;
+	OPERANDO2[4] = #120000 1'b1;
+end 
+// OPERANDO2[ 3 ]
+initial
+begin
+	OPERANDO2[3] = 1'bX;
+	OPERANDO2[3] = #30000 1'b1;
+	OPERANDO2[3] = #150000 1'b0;
+	OPERANDO2[3] = #150000 1'b1;
+	OPERANDO2[3] = #130000 1'b0;
+	OPERANDO2[3] = #260000 1'b1;
+end 
+// OPERANDO2[ 2 ]
+initial
+begin
+	OPERANDO2[2] = 1'bX;
+	OPERANDO2[2] = #30000 1'b1;
+	OPERANDO2[2] = #150000 1'b0;
+	OPERANDO2[2] = #150000 1'b1;
+	OPERANDO2[2] = #270000 1'b0;
+	OPERANDO2[2] = #120000 1'b1;
+end 
+// OPERANDO2[ 1 ]
+initial
+begin
+	OPERANDO2[1] = 1'bX;
+	OPERANDO2[1] = #30000 1'b1;
+	OPERANDO2[1] = #150000 1'b0;
+	OPERANDO2[1] = #150000 1'b1;
+	OPERANDO2[1] = #270000 1'b0;
+	OPERANDO2[1] = #120000 1'b1;
+end 
+// OPERANDO2[ 0 ]
+initial
+begin
+	OPERANDO2[0] = 1'bX;
+	OPERANDO2[0] = #30000 1'b1;
+	OPERANDO2[0] = #150000 1'b0;
+	OPERANDO2[0] = #150000 1'b1;
+end 
+endmodule
+
